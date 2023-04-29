@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
-import { WatchlistService } from '../watchlist/watchlist.service';
 import { Movie } from '../shared/movie.module';
+import { MoviesRequestsService } from '../shared/movies-requests.service';
 
 @Component({
   selector: 'app-favorites',
@@ -9,7 +9,7 @@ import { Movie } from '../shared/movie.module';
   styleUrls: ['./favorites.component.css']
 })
 export class FavoritesComponent implements OnInit {
-  constructor(private watchlistService: WatchlistService) {}
+  constructor(private watchlistService: MoviesRequestsService) {}
   mySub: Subscription = new Subscription;
   favoriteMovies: Movie[] = [];
   favoritesUrl = "https://favorite-movies-f80e3-default-rtdb.firebaseio.com/favorites.json"

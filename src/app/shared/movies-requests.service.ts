@@ -1,12 +1,12 @@
 import { Injectable, OnInit } from '@angular/core';
-import { Movie } from '../shared/movie.module';
+import { Movie } from './movie.module';
 import { BehaviorSubject, map, of, tap } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
 })
-export class WatchlistService {
+export class MoviesRequestsService {
   constructor(private http: HttpClient) {
     const watchlistUrl = "https://movies-guide-eb5a7-default-rtdb.firebaseio.com/movies.json";
     const favoritesUrl = "https://favorite-movies-f80e3-default-rtdb.firebaseio.com/favorites.json";

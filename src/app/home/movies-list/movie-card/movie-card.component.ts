@@ -1,4 +1,4 @@
-import { WatchlistService } from './../../../watchlist/watchlist.service';
+import { MoviesRequestsService } from '../../../shared/movies-requests.service';
 import { Component, Input, OnInit, OnDestroy } from '@angular/core';
 import { Movie } from 'src/app/shared/movie.module';
 import { MoviesListComponent } from '../movies-list.component';
@@ -14,7 +14,7 @@ export class MovieCardComponent implements OnInit, OnDestroy{
   @Input() buttons: any;
   @Input() componentName!: string;
 
-  constructor(private watchlistService: WatchlistService) {}
+  constructor(private watchlistService: MoviesRequestsService) {}
   // Firebase add movies.json to add file
 
   watchedUrl = "https://watched-movies-36f2a-default-rtdb.firebaseio.com/watched.json"

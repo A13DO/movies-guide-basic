@@ -1,6 +1,6 @@
 import { Subscription } from 'rxjs';
 import { Movie } from '../shared/movie.module';
-import { WatchlistService } from './watchlist.service';
+import { MoviesRequestsService } from '../shared/movies-requests.service';
 import { Component, OnDestroy, OnInit } from '@angular/core';
 
 @Component({
@@ -10,7 +10,7 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 })
 export class WatchlistComponent implements OnInit, OnDestroy{
   // i need store to watchlist movies
-  constructor(private watchlistService: WatchlistService) {}
+  constructor(private watchlistService: MoviesRequestsService) {}
   watchlistMovies: any;
   mySub: Subscription = new Subscription;
   watchlistUrl = "https://movies-guide-eb5a7-default-rtdb.firebaseio.com/movies.json"

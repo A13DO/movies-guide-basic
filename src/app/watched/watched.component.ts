@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { WatchlistService } from '../watchlist/watchlist.service';
+import { MoviesRequestsService } from '../shared/movies-requests.service';
 import { Movie } from '../shared/movie.module';
 import { Subscription } from 'rxjs';
 
@@ -15,7 +15,7 @@ export class WatchedComponent implements OnInit, OnDestroy{
 
   WATCHED = "watched"
 
-  constructor(private requestMovies: WatchlistService) {}
+  constructor(private requestMovies: MoviesRequestsService) {}
   ngOnInit(){
     this.mySub = this.requestMovies.getMovies(this.watchedUrl).subscribe(
       movies => {
