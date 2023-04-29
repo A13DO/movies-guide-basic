@@ -1,0 +1,30 @@
+/* body {
+  background-color: red !important;
+
+} */
+.header {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+}
+ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  list-style: none;
+  margin: 0;
+}
+/* li {
+} */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:active {
+  color: white;
+}
+
+/* .row {
+  background-color: transparent;
+} */

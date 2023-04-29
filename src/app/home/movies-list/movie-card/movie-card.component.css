@@ -1,0 +1,33 @@
+body {
+  box-sizing: border-box;
+}
+.card-holder {
+  position: absolute;
+}
+.poster {
+  width: 150px;
+  height: 190px;
+}
+ul {
+  background-color: rgba(3, 4, 20, 0.61);
+  list-style: none;
+  display: flex;
+  position: relative;
+  bottom: 20px;
+  gap: 5px;
+
+}
+.movie-card {
+  cursor: pointer;
+  position: relative;
+  width: 150px;
+  height: 190px;
+}
+/* .button {
+  border: 0;
+  background-color: none;
+} */
+
+.card-holder:hover {
+  border: 1px green solid;
+}
