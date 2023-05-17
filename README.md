@@ -1,6 +1,6 @@
-# movies-guide-small-version
+# movies-guide-basic
  movies website made with angular
-
-small-version
-- allow to add and remove movies from (watched, watchlist, favorites)
+ 
+ it's basic version of movies-guide
+- just allow you to add movies to (watched, watchlist, favorites) sections, and remove it.
 - limited movies
