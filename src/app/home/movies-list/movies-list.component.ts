@@ -28,7 +28,24 @@ export class MoviesListComponent {
       year: '2017',
       posterimagePath: 'https://i.etsystatic.com/36067604/r/il/4355d2/4230665308/il_fullxfull.4230665308_r13v.jpg',
       MovieTime: '2h'
-    },
+    }
+    ,
+    {
+      name: 'Her',
+      description: '',
+      year: '2013',
+      posterimagePath: 'https://alternativemovieposters.com/wp-content/uploads/2015/08/her.jpg',
+      MovieTime: '2h'
+    }
+    ,
+    {
+      name: 'Her',
+      description: '',
+      year: '2013',
+      posterimagePath: 'https://alternativemovieposters.com/wp-content/uploads/2015/08/her.jpg',
+      MovieTime: '2h'
+    }
+    ,
     {
       name: 'Her',
       description: '',

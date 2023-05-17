@@ -1,16 +1,16 @@
-<div class="row">
-  <div class="col-3 movie-card">
-    <div class="card-holder">
-      <img class="img-fluid rounded-start poster" [src]="movie.posterimagePath" alt="">
+  <div class="movie-card">
+    <!-- <div class="card-holder"> -->
+      <a href="/movie">
+        <img class="img-fluid rounded-start poster" [src]="movie.posterimagePath" alt="">
+      </a>
       <div class="buttons-holder">
         <ul>
-          <li><button (click)="onAddToWatched(movie)" *ngIf="buttons">watch</button></li>
-          <li><button (click)="onAddToFavorites(movie)" *ngIf="buttons">love</button></li>
-          <li><button (click)="onAddToWatchlist(movie)" *ngIf="buttons">add</button></li>
-          <li><button class="delete-button" (click)="deleteMovie(movie, componentName)" *ngIf="!buttons">delete</button></li>
+          <li *ngIf="buttons"><button (click)="onAddToWatched(movie)">✔</button></li>
+          <li *ngIf="buttons"><button (click)="onAddToFavorites(movie)">❤</button></li>
+          <li *ngIf="buttons"><button (click)="onAddToWatchlist(movie)">👁‍🗨</button></li>
+          <li *ngIf="!buttons"><button class="delete-button" (click)="deleteMovie(movie, componentName)">❌</button></li>
         </ul>
       </div>
     </div>
     <!-- <p>Name</p> -->
-  </div>
-</div>
+  <!-- </div> -->

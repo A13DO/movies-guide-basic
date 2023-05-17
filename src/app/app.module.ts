@@ -11,6 +11,7 @@ import { MovieCardComponent } from './home/movies-list/movie-card/movie-card.com
 import { FavoritesComponent } from './favorites/favorites.component';
 import { HttpClientModule } from '@angular/common/http';
 import { WatchedComponent } from './watched/watched.component';
+import { MovieDetailsPageComponent } from './movie-details-page/movie-details-page.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { WatchedComponent } from './watched/watched.component';
     MoviesListComponent,
     MovieCardComponent,
     FavoritesComponent,
-    WatchedComponent
+    WatchedComponent,
+    MovieDetailsPageComponent
   ],
   imports: [
     BrowserModule,

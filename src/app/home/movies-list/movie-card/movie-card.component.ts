@@ -51,7 +51,7 @@ export class MovieCardComponent implements OnInit, OnDestroy{
     // remove from page
     document.addEventListener("click", function (e) {
       if ((e.target as HTMLElement).classList.contains('delete-button')) {
-        const item = (e.target as HTMLElement).closest('.row')
+        const item = (e.target as HTMLElement).closest('.movie-card')
           console.log(item)
           item?.remove()
       }}
